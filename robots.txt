@@ -1,0 +1,16 @@
+# Diese Seiten sollen nicht in Suchergebnissen erscheinen.
+#
+# Das steht **nicht** hier als Disallow, und das ist Absicht: Ein Disallow
+# verbietet nur das Lesen, nicht das Aufnehmen in den Index. Eine Adresse,
+# die von aussen verlinkt ist — und der Play-Store-Eintrag verlinkt sie —
+# landet dann trotzdem im Index, nur ohne Inhalt, weil der Crawler die
+# Seite nicht lesen durfte.
+#
+# Wirksam ist stattdessen `<meta name="robots" content="noindex">` in jeder
+# Seite. Damit der Crawler die Anweisung findet, muss er die Seiten lesen
+# duerfen. Deshalb steht hier absichtlich kein Disallow.
+#
+# Wer hier spaeter ein Disallow eintraegt, hebt die Wirkung des noindex auf.
+
+User-agent: *
+Allow: /
