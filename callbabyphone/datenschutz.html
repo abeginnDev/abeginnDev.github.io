@@ -14,16 +14,10 @@
 <p class="nav"><a href="../">Start</a><a href="./">CallBaby Babyphone</a><a href="privacy.html">English</a><a href="impressum.html">Impressum</a></p>
 
 <h1>Datenschutzerklärung</h1>
-<p class="lead">für die Android-App <strong>CallBaby Babyphone</strong> (<code>de.beckstack.callbabyphone</code>) · Stand: 18. August 2026</p>
+<p class="lead">CallBaby Babyphone (<code>de.beckstack.callbabyphone</code>) · Stand: 15. Oktober 2026 · <a href="privacy.html">English version</a></p>
 
 <div class="box">
-<strong>Kurz gesagt</strong>
-<ul>
-<li>CallBaby hat <strong>keinen Server</strong> und <strong>kein Nutzerkonto</strong>. Wir betreiben keine Datenbank über dich.</li>
-<li>Das <strong>Mikrofonsignal verlässt dein Gerät nie</strong>. Es wird auf dem Gerät ausgewertet und sofort verworfen – nichts wird aufgezeichnet, gespeichert oder übertragen.</li>
-<li>Deine <strong>Telefonnummer bleibt auf dem Gerät</strong>. Sie wird nur zum Wählen benutzt.</li>
-<li>Das Einzige, was das Gerät verlässt, ist das, was für die <strong>Werbung</strong> nötig ist – und dafür wirst du beim ersten Start gefragt.</li>
-</ul>
+<p><strong>Das Wichtigste zuerst:</strong> CallBaby wertet Geräusche auf dem Smartphone aus und speichert keine Tonaufnahmen. Bei einem Alarm- oder Testanruf überträgt die Telefonverbindung den Raumton an die gewählte Nummer. Es gibt kein CallBaby-Nutzerkonto und keinen Server des Anbieters. Weitere Datenverarbeitung findet durch Google für Werbung, Einwilligungsverwaltung und den optionalen Pro-Kauf statt.</p>
 </div>
 
 <h2>1. Verantwortlicher</h2>
@@ -35,123 +29,85 @@ E-Mail: <a href="mailto:andreas.becker.gschftl@gmail.com">andreas.becker.gschftl
 </p>
 <p>Vollständige Angaben im <a href="impressum.html">Impressum</a>.</p>
 
-<h2>2. Was auf deinem Gerät bleibt</h2>
+<h2>2. Was die App tut</h2>
+<p>CallBaby Babyphone verwandelt ein Smartphone in ein Babyphone. Das Gerät bleibt im Kinderzimmer und hört mit. Überschreitet der Ton die eingestellte Schwelle – wahlweise nach Lautstärke oder nach erkanntem Weinen –, versucht die App, eine von Ihnen hinterlegte Rufnummer anzurufen. Optional lässt sich das Freisprechen am Kindgerät einschalten; standardmäßig ist es ausgeschaltet. Ein zweites Gerät mit der App ist nicht nötig; der Alarm läuft über das gewöhnliche Mobilfunknetz.</p>
 
-<h3>Mikrofonaufnahme</h3>
-<p>
-Der Zweck der App ist es, Geräusche im Kinderzimmer zu erkennen. Dafür wertet CallBaby das Mikrofonsignal aus, solange du die Überwachung gestartet hast. Diese Auswertung läuft <strong>vollständig auf deinem Gerät</strong>: Das Signal wird in kurzen Abschnitten gefiltert, sein Schallpegel gemessen und – falls du die Auslöseart „Weinen“ gewählt hast – von einem Modell bewertet, das ebenfalls auf dem Gerät liegt. Anschließend wird der Abschnitt verworfen.
-</p>
-<p>
-<strong>Es entsteht keine Aufnahme.</strong> Es wird keine Audiodatei angelegt, nichts zwischengespeichert und nichts an uns oder an Dritte gesendet. Wir haben zu keinem Zeitpunkt Zugriff auf das, was dein Mikrofon hört.
-</p>
-<p>
-Während die Überwachung läuft, zeigt Android eine dauerhafte Benachrichtigung an. Du siehst also jederzeit, dass zugehört wird, und beendest es mit einem Fingertipp.
-</p>
+<h2>3. Verarbeitung auf dem Gerät</h2>
 
-<h3>Telefonnummer und Kontaktname</h3>
-<p>
-Die Nummer, die im Alarmfall angerufen werden soll, gibst du selbst ein oder wählst sie aus deinem Adressbuch. Sie wird zusammen mit dem Landesvorwahl-Kürzel und – bei Auswahl aus dem Adressbuch – dem angezeigten Namen in den <strong>lokalen Einstellungen deines Geräts</strong> gespeichert. Diese Angaben verlassen das Gerät nicht.
-</p>
-<p>
-Für die Auswahl aus dem Adressbuch fordert CallBaby <strong>keine Berechtigung für deine Kontakte</strong> an. Die Auswahl läuft über den Kontaktauswahl-Dialog von Android; die App erhält ausschließlich den einen Eintrag, den du dort antippst, und sieht dein Adressbuch nie.
-</p>
+<h3>3.1 Mikrofonaufnahme</h3>
+<p>Während der Überwachung greift die App auf das Mikrofon zu. Der Ton wird fortlaufend im Arbeitsspeicher ausgewertet und sofort wieder verworfen.</p>
+<ul>
+  <li><strong>Es wird keine Aufnahme gespeichert</strong> – weder ganz noch in Ausschnitten, weder dauerhaft noch vorübergehend auf dem Speicher des Geräts.</li>
+  <li><strong>Für die Geräuscherkennung wird kein Ton hochgeladen.</strong> Die lokale Auswertung benötigt keinen Server.</li>
+  <li>Die Weinerkennung arbeitet mit einem Klassifikationsmodell, das <em>im Installationspaket der App enthalten</em> ist und vollständig auf dem Gerät läuft. Auch dafür verlässt kein Ton das Gerät.</li>
+  <li>Bei einem Alarm- oder Testanruf wird der Raumton über die gewöhnliche Telefonverbindung übertragen. Ihr Telefonanbieter verarbeitet dabei Verbindungsdaten und Gesprächsinhalte nach seinen Bedingungen. Die gewählte Gegenstelle kann den Ton hören; dazu kann auch eine Mailbox gehören.</li>
+</ul>
+<p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Erfüllung des Nutzungsvertrags). Die Mikrofonberechtigung ist der Kernzweck der App; ohne sie ist sie funktionslos. Sie lässt sich in den Android-Einstellungen jederzeit widerrufen.</p>
 
-<h3>Einstellungen</h3>
-<p>
-Empfindlichkeit, Auslöseart, Pausenzeiten, Sprache und die übrigen Einstellungen liegen in der lokalen Einstellungsablage der App. Sie werden mit der Deinstallation gelöscht.
-</p>
+<h3>3.2 Rufnummer und Kontaktname</h3>
+<p>Die von Ihnen eingetragene Rufnummer und ein gegebenenfalls dazu gespeicherter Name werden in den geteilten Einstellungen (<code>SharedPreferences</code>) Ihres Geräts gespeichert. Die App übermittelt sie an keinen eigenen Server. Zum Wählen wird die Nummer an die Android-Telefonie und den Telefonanbieter übergeben. Wählen Sie eine Nummer über die Kontaktauswahl des Systems, so übergibt Android der App nur die eine ausgewählte Nummer; die App liest Ihr Adressbuch nicht und besitzt dafür keine Berechtigung.</p>
+<p>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO. Löschung: Deinstallation der App oder Löschen der App-Daten in den Android-Einstellungen.</p>
 
-<h2>3. Was dein Gerät verlässt: Werbung</h2>
-<p>
-CallBaby ist kostenlos und finanziert sich über Werbung. Dafür ist <strong>Google AdMob</strong> eingebunden. Wenn Anzeigen ausgeliefert werden, verarbeitet Google dabei die folgenden Daten:
-</p>
+<h3>3.3 Telefonstatus</h3>
+<p>Um Wählen, Telefonat und anschließende Wiederaufnahme der Erkennung zu koordinieren, liest die App den Anrufzustand des Geräts (<code>READ_PHONE_STATE</code>). Dieser Zustand unterscheidet nicht zuverlässig zwischen Wählen und angenommenem Gespräch; die App erkennt insbesondere nicht, ob eine Person oder eine Mailbox abnimmt. Rufnummern eingehender Anrufe, eine Anrufliste oder Ihre eigene Rufnummer werden nicht gelesen, nicht gespeichert und nicht übertragen.</p>
 
+<h3>3.4 Einstellungen und Fehlerdiagnose</h3>
+<p>Ihre Einstellungen – Empfindlichkeit, Auslöseart, Startpause, Sprache – liegen auf dem Gerät. Scheitert der Überwachungsdienst, hinterlegt die App die technische Fehlermeldung ebenfalls nur lokal, damit sich die Ursache am Gerät nachvollziehen lässt. Es findet <strong>keine</strong> Übermittlung von Absturz- oder Nutzungsstatistiken an uns statt. Die vom Werbe-SDK verarbeiteten Diagnosedaten sind in Abschnitt 5 beschrieben. Je nach Android-Sicherungsfunktion können allgemeine App-Einstellungen in die Gerätesicherung einbezogen werden; die getrennte Kaufablage ist davon ausgeschlossen.</p>
+
+<h2>4. Berechtigungen und wozu sie dienen</h2>
 <div class="wrap">
 <table>
-<tr><th>Daten</th><th>Wozu</th></tr>
-<tr><td>Werbe-ID des Geräts (Advertising ID)</td><td>Auslieferung und Abrechnung von Anzeigen, Begrenzung der Anzeigehäufigkeit, bei Einwilligung auch personalisierte Werbung</td></tr>
-<tr><td>IP-Adresse, daraus abgeleitet ein ungefährer Standort (etwa auf Stadtebene)</td><td>Auslieferung passender Anzeigen, Betrugserkennung</td></tr>
-<tr><td>Interaktionen mit den Anzeigen sowie technische Angaben zum Gerät (Modell, Betriebssystemversion)</td><td>Messung und Abrechnung</td></tr>
+  <tr><th>Berechtigung</th><th>Wofür</th></tr>
+  <tr><td><code>RECORD_AUDIO</code></td><td>Den Raumton hören, um den Alarm auszulösen. Auswertung nur auf dem Gerät</td></tr>
+  <tr><td><code>FOREGROUND_SERVICE_MICROPHONE</code></td><td>Weiterhören, während der Bildschirm aus ist oder eine andere App im Vordergrund läuft</td></tr>
+  <tr><td><code>CALL_PHONE</code></td><td>Die hinterlegte Nummer im Alarmfall anrufen</td></tr>
+  <tr><td><code>READ_PHONE_STATE</code></td><td>Erkennen, ob der ausgelöste Anruf läuft, um das Freisprechen zu schalten</td></tr>
+  <tr><td><code>MODIFY_AUDIO_SETTINGS</code></td><td>Im Alarmanruf auf Freisprechen umschalten</td></tr>
+  <tr><td><code>ACCESS_NOTIFICATION_POLICY</code></td><td>Das Kindgerät während der Überwachung stummschalten und den Klingelmodus danach zurückstellen</td></tr>
+  <tr><td>Internet</td><td>Für Werbung, Einwilligungsverwaltung und Google-Play-Käufe; das Öffnen der Datenschutzerklärung erfolgt im Browser</td></tr>
 </table>
 </div>
+<p>Nach einem Geräteneustart beginnt die Überwachung nicht automatisch. Sie starten sie erneut in der App.</p>
 
-<p>
-<strong>Empfänger</strong> ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, sowie deren verbundene Unternehmen. Eine Übermittlung in die USA findet statt; Google stützt sich dabei auf das EU-US Data Privacy Framework und die Standardvertragsklauseln der EU-Kommission.
-</p>
-<p>
-Einzelheiten: <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a> und <a href="https://support.google.com/admob/answer/9012903" rel="noopener">Hinweise zur Datenverarbeitung bei AdMob</a>.
-</p>
-<p>
-<strong>Rechtsgrundlage</strong> ist deine Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO, soweit sie erforderlich ist – dazu Abschnitt 4. Für die Auslieferung nicht personalisierter Anzeigen stützen wir uns auf unser berechtigtes Interesse an der Finanzierung der kostenlos angebotenen App, Art. 6 Abs. 1 lit. f DSGVO.
-</p>
-<p>
-<strong>Über die Werbung hinaus baut die App keine Verbindung ins Internet auf.</strong> Die Überwachung selbst funktioniert ohne Netz.
-</p>
-
-<h2>4. Deine Einwilligung und wie du sie widerrufst</h2>
-<p>
-Beim ersten Start zeigt CallBaby ein Einwilligungsformular an, das Google für die Werbung bereitstellt (User Messaging Platform). Dort entscheidest du, ob personalisierte Werbung ausgeliefert werden darf. Deine Entscheidung wird auf dem Gerät gespeichert.
-</p>
-<p>
-<strong>Widerruf:</strong> Du kannst deine Entscheidung jederzeit zurücknehmen, indem du in den Android-Einstellungen unter <em>Apps → CallBaby Babyphone → Speicher</em> die App-Daten löschst. Beim nächsten Start erscheint das Formular erneut. Unabhängig davon lässt sich die Werbe-ID in den Android-Einstellungen unter <em>Datenschutz → Anzeigen</em> zurücksetzen oder löschen; danach lässt sich das Gerät nicht mehr über die bisherige Kennung wiedererkennen.
-</p>
-<p>
-Der Widerruf wirkt für die Zukunft. Die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung bleibt unberührt.
-</p>
-
-<h2>5. Berechtigungen und wofür sie gebraucht werden</h2>
-
+<h2>5. Werbung (Google AdMob)</h2>
+<p>Die kostenlose Fassung der App zeigt Werbung. Anbieter ist <strong>Google Ireland Limited</strong>, Gordon House, Barrow Street, Dublin 4, Irland.</p>
+<p>Google AdMob kann dabei folgende Daten verarbeiten:</p>
 <div class="wrap">
 <table>
-<tr><th>Berechtigung</th><th>Wofür</th></tr>
-<tr><td>Mikrofon</td><td>Geräusche im Zimmer erkennen. Auswertung ausschließlich auf dem Gerät</td></tr>
-<tr><td>Vordergrunddienst „Mikrofon“</td><td>Weiterhören, während der Bildschirm aus ist und die App im Hintergrund liegt</td></tr>
-<tr><td>Anrufe tätigen</td><td>Im Alarmfall die von dir hinterlegte Nummer wählen</td></tr>
-<tr><td>Telefonstatus lesen</td><td>Erkennen, wann das Gespräch läuft und wann es endet – davon hängen die Nachlaufpause und die Freigabe des Mikrofons ab</td></tr>
-<tr><td>Audioeinstellungen ändern</td><td>Freisprechen während des Alarmanrufs einschalten und danach zurückstellen</td></tr>
-<tr><td>Zugriff auf „Nicht stören“</td><td>Nur wenn du die Stummschaltung nutzt: Klingelton während der Überwachung stumm schalten und danach zurückstellen</td></tr>
-<tr><td>Benachrichtigungen</td><td>Die dauerhafte Anzeige, dass die Überwachung läuft, sowie die Störungsmeldung</td></tr>
-<tr><td>Internet</td><td>Ausschließlich für die Werbung</td></tr>
+  <tr><th>Datentyp</th><th>Zweck</th></tr>
+  <tr><td>Werbe-ID des Geräts (Advertising ID)</td><td>Auslieferung und Messung von Werbung</td></tr>
+  <tr><td>Interaktionen mit der Werbung (Einblendungen, Klicks)</td><td>Abrechnung und Messung</td></tr>
+  <tr><td>Ungefährer Standort, aus der IP-Adresse abgeleitet</td><td>Regionale Auswahl der Werbung</td></tr>
+  <tr><td>Technische Angaben zu Gerät, App-Fassung und Leistung des Werbe-SDK</td><td>Auslieferung, Diagnose, Analyse und Betrugsprävention</td></tr>
 </table>
 </div>
+<p><strong>Ihre Datenschutzwahl.</strong> Nach der Einführung prüft die App mit Googles <em>User Messaging Platform</em> (UMP), ob ein Formular erforderlich ist, und zeigt es gegebenenfalls an. Anzeigen werden nur angefragt, wenn UMP dies erlaubt. Ihre Auswahl und die geltenden Anforderungen bestimmen, ob und welche Werbung zulässig ist; eine Ablehnung garantiert nicht, dass nicht-personalisierte Werbung erscheint. Wenn UMP Datenschutzoptionen vorsieht, finden Sie diese in den Einstellungen der App und können Ihre Auswahl dort ändern. Die Geräuscherkennung und Anrufe bleiben auch ohne Werbung nutzbar.</p>
+<p>Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) für personalisierte Werbung, im Übrigen Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Finanzierung der kostenlosen App).</p>
+<p>Google kann Daten dabei auch in die USA übermitteln; Grundlage sind die Standardvertragsklauseln der EU-Kommission sowie das EU-US Data Privacy Framework. Einzelheiten: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a> und <a href="https://support.google.com/admob/answer/6128543" rel="noopener">support.google.com/admob/answer/6128543</a>.</p>
+<p>Die Werbe-ID lässt sich in den Android-Einstellungen unter <em>Datenschutz → Werbung</em> zurücksetzen oder löschen.</p>
 
-<p>
-CallBaby fordert <strong>keinen Zugriff auf Kontakte, Standort, Kamera, Fotos, SMS oder die Anrufliste</strong> an.
-</p>
+<h2>6. Optionaler Pro-Kauf</h2>
+<p>Die folgenden Angaben zum Kauf gelten für App-Versionen, die CallBaby Pro anbieten.</p>
+<p>CallBaby Pro ist ein einmaliger Kauf für Werbefreiheit und Stummschaltung. Die Zahl der Alarm- und Testanrufe wird durch den Kauf nicht begrenzt. <strong>Google Play</strong> wickelt den Kauf ab; die App erhält keine Zahlungsinstrumente wie Kreditkartendaten. Für die Zahlungsabwicklung gilt die Datenschutzerklärung von Google.</p>
+<p>Die App erhält Kaufbeleg und Signatur von Google Play, prüft sie lokal und speichert den geprüften Berechtigungsnachweis getrennt von den allgemeinen Einstellungen. Diese Kaufablage ist vom Android-Backup ausgeschlossen. Es erfolgt keine Übermittlung an einen Server des Anbieters. Der Kaufstatus wird beim Start und bei Rückkehr in die App mit Google Play abgeglichen; Wiederherstellung ist über das verwendete Google-Play-Konto möglich. Ein bereits geprüfter Kauf bleibt bei einem Netzfehler lokal verfügbar. Ein erfolgreicher Abgleich ohne gültigen Kauf entfernt die Freischaltung, etwa nach einer Erstattung.</p>
+<p>Rechtsgrundlage für die Verarbeitung des Kaufnachweises: Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung der gekauften Funktionen). Sie können den lokalen Nachweis durch Löschen der App-Daten oder Deinstallation löschen; dies löscht den Kauf bei Google Play nicht.</p>
 
-<h2>6. Keine Analyse durch uns</h2>
-<p>
-Wir setzen keine Analyse-, Tracking- oder Absturzberichtsdienste ein. Wir erfahren nicht, wie oft du die App startest, wie sie eingestellt ist oder ob sie ausgelöst hat.
-</p>
-<p>
-Unabhängig davon erhebt <strong>Google Play</strong> beim Herunterladen und Betrieb einer App eigene Daten – etwa Installationszahlen und, sofern du dem in deinen Geräteeinstellungen zugestimmt hast, Absturzberichte. Verantwortlich dafür ist Google; wir sehen davon nur zusammengefasste, nicht personenbezogene Auswertungen.
-</p>
+<h2>7. Kinder</h2>
+<p>CallBaby Babyphone richtet sich an Eltern, nicht an Kinder. Die App ist nicht für die Nutzung durch Kinder bestimmt und wird nicht an Kinder vermarktet. Die lokale Erkennung verarbeitet auch Geräusche des Kindes; während des Telefonats kann dessen Stimme an der gewählten Gegenstelle hörbar sein.</p>
 
-<h2>7. Speicherdauer</h2>
-<p>
-Die auf dem Gerät gespeicherten Angaben (Rufnummer, Einstellungen, Einwilligungsentscheidung) bleiben, bis du sie änderst, die App-Daten löschst oder die App deinstallierst. Bei uns wird nichts gespeichert, weil bei uns nichts ankommt. Die Speicherdauer der Werbedaten richtet sich nach den Angaben von Google.
-</p>
+<h2>8. Speicherdauer</h2>
+<p>Lokal gespeicherte Einstellungen und Fehlerhinweise bleiben erhalten, bis Sie sie ändern, die App-Daten löschen oder die App deinstallieren. Der Kaufnachweis wird zusätzlich bei einem erfolgreichen Abgleich ohne gültigen Kauf entfernt. Für Daten aus Werbung, Einwilligungsverwaltung und Kauf gelten die Aufbewahrungsregeln von Google; für Telefonverbindungen die Ihres Telefonanbieters.</p>
 
-<h2>8. Deine Rechte</h2>
-<p>
-Dir stehen gegenüber dem Verantwortlichen die Rechte auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21 DSGVO) zu.
-</p>
-<p>
-<strong>In der Praxis:</strong> Da wir keine Daten über dich erhalten, können wir zu deiner Person keine Auskunft erteilen und nichts löschen – es liegt nichts vor. Alles, was CallBaby gespeichert hat, liegt auf deinem Gerät und steht dir dort unmittelbar zur Verfügung. Für die Werbedaten wende dich an Google.
-</p>
-<p>
-Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren.
-</p>
+<h2>9. Ihre Rechte</h2>
+<p>Ihnen stehen nach der DSGVO die Rechte auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21) zu. Eine erteilte Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen.</p>
+<p>Da wir selbst keine Daten über Sie speichern und Sie über kein Konto bei uns verfügen, können wir Ihnen auf eine Auskunftsanfrage in aller Regel nur mitteilen, dass zu Ihnen keine Daten vorliegen. Für Daten, die Google im Rahmen von AdMob oder Google Play verarbeitet, können Sie sich auch unmittelbar an Google wenden.</p>
+<p>Ihnen steht ferner ein Beschwerderecht bei einer Aufsichtsbehörde zu (Art. 77 DSGVO).</p>
 
-<h2>9. Kinder</h2>
-<p>
-CallBaby richtet sich an Eltern, also an Erwachsene. Die App ist nicht für die Nutzung durch Kinder bestimmt und erhebt wissentlich keine Daten von Kindern.
-</p>
+<h2>10. Änderungen dieser Erklärung</h2>
+<p>Ändert sich die App, wird auch diese Erklärung angepasst. Maßgeblich ist die jeweils an dieser Adresse abrufbare Fassung; das Datum oben nennt den Stand.</p>
 
-<h2>10. Änderungen</h2>
-<p>
-Ändert sich die App, ändert sich diese Erklärung mit. Die jeweils geltende Fassung steht unter dieser Adresse; das Datum oben nennt den Stand.
-</p>
+<h2>11. Kontakt</h2>
+<p>Fragen zum Datenschutz richten Sie bitte an <a href="mailto:andreas.becker.gschftl@gmail.com">andreas.becker.gschftl@gmail.com</a>.</p>
 
 </main>
 <footer>

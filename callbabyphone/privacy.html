@@ -14,16 +14,10 @@
 <p class="nav"><a href="../">Home</a><a href="./">CallBaby Babyphone</a><a href="datenschutz.html">Deutsch</a><a href="impressum.html">Imprint</a></p>
 
 <h1>Privacy Policy</h1>
-<p class="lead">for the Android app <strong>CallBaby Babyphone</strong> (<code>de.beckstack.callbabyphone</code>) · Last updated: 18 August 2026</p>
+<p class="lead">CallBaby Babyphone (<code>de.beckstack.callbabyphone</code>) · Last updated: 15 October 2026 · <a href="datenschutz.html">Deutsche Fassung</a></p>
 
 <div class="box">
-<strong>In short</strong>
-<ul>
-<li>CallBaby has <strong>no server</strong> and <strong>no user account</strong>. We do not run a database about you.</li>
-<li>The <strong>microphone signal never leaves your device</strong>. It is analysed on the device and discarded immediately — nothing is recorded, stored or transmitted.</li>
-<li>Your <strong>phone number stays on the device</strong>. It is used only to place the call.</li>
-<li>The only thing that leaves your device is what <strong>advertising</strong> requires — and you are asked about that on first launch.</li>
-</ul>
+<p><strong>At a glance:</strong> CallBaby analyses sounds on the phone and saves no audio recordings. During an alert or test call, the telephone connection carries room audio to the selected number. There is no CallBaby user account and no server operated by us. Google also processes data for advertising, privacy choices and the optional Pro purchase.</p>
 </div>
 
 <h2>1. Controller</h2>
@@ -34,123 +28,84 @@ Breisgaustraße 12/6<br>
 E-mail: <a href="mailto:andreas.becker.gschftl@gmail.com">andreas.becker.gschftl@gmail.com</a>
 </p>
 
-<h2>2. What stays on your device</h2>
+<h2>2. What the app does</h2>
+<p>CallBaby Babyphone turns a smartphone into a baby monitor. The device stays in the nursery and listens. When the sound crosses the configured threshold — by loudness or by detected crying, as you choose — the app attempts to call a phone number you have entered. Speakerphone on the child’s device is optional and off by default. A second device running the app is not required; the alert travels over the ordinary mobile network.</p>
 
-<h3>Microphone</h3>
-<p>
-The purpose of the app is to detect sounds in a child's room. To do so, CallBaby analyses the microphone signal while you have monitoring switched on. This analysis runs <strong>entirely on your device</strong>: the signal is filtered in short segments, its sound level measured and — if you chose the "crying" trigger — rated by a model that also resides on the device. The segment is then discarded.
-</p>
-<p>
-<strong>No recording is created.</strong> No audio file is written, nothing is buffered, and nothing is sent to us or to third parties. At no point do we have access to what your microphone hears.
-</p>
-<p>
-While monitoring is running, Android displays a persistent notification, so you can always see that the app is listening and stop it with a single tap.
-</p>
+<h2>3. Processing on the device</h2>
 
-<h3>Phone number and contact name</h3>
-<p>
-You enter the number to be called in an alarm, or pick it from your address book. It is stored, together with the country code and — when picked from the address book — the displayed name, in your device's <strong>local app settings</strong>. This information does not leave the device.
-</p>
-<p>
-CallBaby does <strong>not request permission to access your contacts</strong>. Picking a contact uses Android's own contact picker; the app receives only the single entry you tap and never sees your address book.
-</p>
+<h3>3.1 Microphone</h3>
+<p>While monitoring, the app accesses the microphone. Audio is analysed continuously in memory and discarded immediately.</p>
+<ul>
+  <li><strong>No recording is stored</strong> — neither in full nor in fragments, neither permanently nor temporarily on the device's storage.</li>
+  <li><strong>No audio is uploaded for sound detection.</strong> Local analysis does not require a server.</li>
+  <li>Cry detection uses a classification model <em>bundled inside the app package</em> that runs entirely on the device. No audio leaves the device for it either.</li>
+  <li>During an alert or test call, room audio travels over the ordinary telephone connection. Your telephone provider processes connection data and call content under its own terms. The selected recipient can hear the audio; this may also be a voicemail service.</li>
+</ul>
+<p>Legal basis: Art. 6(1)(b) GDPR (performance of a contract). The microphone permission is the core purpose of the app; without it the app has no function. You can revoke it at any time in the Android settings.</p>
 
-<h3>Settings</h3>
-<p>
-Sensitivity, trigger type, delays, language and the remaining settings live in the app's local settings store and are removed when you uninstall the app.
-</p>
+<h3>3.2 Phone number and contact name</h3>
+<p>The phone number you enter, and any name stored alongside it, are stored in your device's shared preferences (<code>SharedPreferences</code>). The app does not send them to a server operated by us. To place a call, the number is passed to Android telephony and your telephone provider. If you pick a number through the system contact picker, Android hands the app only that one selected number; the app does not read your address book and holds no permission to do so.</p>
+<p>Legal basis: Art. 6(1)(b) GDPR. Deletion: uninstall the app or clear its data in the Android settings.</p>
 
-<h2>3. What does leave your device: advertising</h2>
-<p>
-CallBaby is free and funded by advertising, for which <strong>Google AdMob</strong> is integrated. When ads are served, Google processes the following data:
-</p>
+<h3>3.3 Phone state</h3>
+<p>To coordinate dialing, the call and resuming detection afterwards, the app reads the device’s call state (<code>READ_PHONE_STATE</code>). This state does not reliably distinguish dialing from an answered call; the app cannot tell whether a person or voicemail answers. Numbers of incoming calls, call logs and your own number are neither read, stored nor transmitted.</p>
 
+<h3>3.4 Settings and diagnostics</h3>
+<p>Your settings — sensitivity, trigger type, start delay, language — live on the device. If the monitoring service fails, the app records the technical error message locally as well, so the cause can be traced on the device. <strong>No</strong> crash or usage statistics are transmitted to us. Diagnostic data processed by the advertising SDK is described in section 5. Depending on the Android backup settings, general app settings may be included in device backups; the separate purchase storage is excluded.</p>
+
+<h2>4. Permissions and what they are for</h2>
 <div class="wrap">
 <table>
-<tr><th>Data</th><th>Purpose</th></tr>
-<tr><td>The device's advertising ID</td><td>Serving and billing of ads, frequency capping and, with your consent, personalised advertising</td></tr>
-<tr><td>IP address and the approximate location derived from it (roughly city level)</td><td>Serving relevant ads, fraud detection</td></tr>
-<tr><td>Interactions with the ads and technical device details (model, OS version)</td><td>Measurement and billing</td></tr>
+  <tr><th>Permission</th><th>Purpose</th></tr>
+  <tr><td><code>RECORD_AUDIO</code></td><td>Hear the room in order to trigger the alert. Analysed on the device only</td></tr>
+  <tr><td><code>FOREGROUND_SERVICE_MICROPHONE</code></td><td>Keep listening while the screen is off or another app is in the foreground</td></tr>
+  <tr><td><code>CALL_PHONE</code></td><td>Call the stored number when an alert fires</td></tr>
+  <tr><td><code>READ_PHONE_STATE</code></td><td>Detect whether the placed call is running, in order to enable the speakerphone</td></tr>
+  <tr><td><code>MODIFY_AUDIO_SETTINGS</code></td><td>Switch the alert call to speakerphone</td></tr>
+  <tr><td><code>ACCESS_NOTIFICATION_POLICY</code></td><td>Silence the child's device during monitoring and restore the ringer mode afterwards</td></tr>
+  <tr><td>Internet</td><td>For advertising, privacy choices and Google Play purchases; the privacy policy opens in a browser</td></tr>
 </table>
 </div>
+<p>Monitoring does not start automatically after the device restarts. You start it again in the app.</p>
 
-<p>
-The <strong>recipient</strong> is Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland, and its affiliates. Data is transferred to the USA; Google relies on the EU-US Data Privacy Framework and the European Commission's standard contractual clauses.
-</p>
-<p>
-Details: <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> and <a href="https://support.google.com/admob/answer/9012903" rel="noopener">how AdMob handles data</a>.
-</p>
-<p>
-The <strong>legal basis</strong> is your consent under Art. 6(1)(a) GDPR where such consent is required (see section 4). For non-personalised ads we rely on our legitimate interest in funding an app offered free of charge, Art. 6(1)(f) GDPR.
-</p>
-<p>
-<strong>Apart from advertising, the app makes no internet connection.</strong> Monitoring itself works without a network.
-</p>
-
-<h2>4. Your consent and how to withdraw it</h2>
-<p>
-On first launch CallBaby shows a consent form provided by Google (User Messaging Platform), where you decide whether personalised advertising may be served. Your decision is stored on the device.
-</p>
-<p>
-<strong>Withdrawal:</strong> you can reverse your decision at any time by clearing the app's data under <em>Settings → Apps → CallBaby Babyphone → Storage</em>; the form will appear again on the next launch. Independently of that, the advertising ID can be reset or deleted under <em>Settings → Privacy → Ads</em>, after which the device can no longer be recognised by the previous identifier.
-</p>
-<p>
-Withdrawal takes effect for the future and does not affect the lawfulness of processing carried out beforehand.
-</p>
-
-<h2>5. Permissions and why they are needed</h2>
-
+<h2>5. Advertising (Google AdMob)</h2>
+<p>The free version of the app shows advertising. The provider is <strong>Google Ireland Limited</strong>, Gordon House, Barrow Street, Dublin 4, Ireland.</p>
 <div class="wrap">
 <table>
-<tr><th>Permission</th><th>Purpose</th></tr>
-<tr><td>Microphone</td><td>Detect sounds in the room. Analysis happens on the device only</td></tr>
-<tr><td>Foreground service "microphone"</td><td>Keep listening while the screen is off and the app is in the background</td></tr>
-<tr><td>Place calls</td><td>Dial the number you configured when an alarm triggers</td></tr>
-<tr><td>Read phone state</td><td>Detect when the call is in progress and when it ends — the cooldown and the release of the microphone depend on it</td></tr>
-<tr><td>Modify audio settings</td><td>Turn on the speakerphone during the alarm call and restore it afterwards</td></tr>
-<tr><td>Do Not Disturb access</td><td>Only if you use the mute feature: silence the ringer while monitoring and restore it afterwards</td></tr>
-<tr><td>Notifications</td><td>The persistent notice that monitoring is running, and the fault notification</td></tr>
-<tr><td>Internet</td><td>For advertising only</td></tr>
+  <tr><th>Data type</th><th>Purpose</th></tr>
+  <tr><td>Device advertising ID</td><td>Serving and measuring ads</td></tr>
+  <tr><td>Ad interactions (impressions, clicks)</td><td>Billing and measurement</td></tr>
+  <tr><td>Approximate location, derived from the IP address</td><td>Regional ad selection</td></tr>
+  <tr><td>Technical details about device, app version and ad SDK performance</td><td>Ad delivery, diagnostics, analytics and fraud prevention</td></tr>
 </table>
 </div>
+<p><strong>Your privacy choices.</strong> After onboarding, the app uses Google’s <em>User Messaging Platform</em> (UMP) to check whether a form is required and displays it when needed. Ads are requested only when UMP permits them. Your choices and applicable requirements determine whether and which ads may be shown; declining does not guarantee that non-personalised ads will appear. When UMP requires privacy options, you can find them in the app’s settings and change your choices there. Sound detection and calls remain available without advertising.</p>
+<p>Legal basis: Art. 6(1)(a) GDPR (consent) for personalised advertising; otherwise Art. 6(1)(f) GDPR (legitimate interest in funding the free app).</p>
+<p>Google may transfer data to the United States, based on the EU Commission's Standard Contractual Clauses and the EU-US Data Privacy Framework. Details: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a> and <a href="https://support.google.com/admob/answer/6128543" rel="noopener">support.google.com/admob/answer/6128543</a>.</p>
+<p>The advertising ID can be reset or deleted in the Android settings under <em>Privacy → Ads</em>.</p>
 
-<p>
-CallBaby requests <strong>no access to contacts, location, camera, photos, SMS or the call log</strong>.
-</p>
+<h2>6. Optional Pro purchase</h2>
+<p>The following purchase information applies to app versions that offer CallBaby Pro.</p>
+<p>CallBaby Pro is a one-time purchase that removes ads and unlocks silent mode. Alert and test calls remain unlimited without a purchase. <strong>Google Play</strong> handles the transaction; the app does not receive payment instruments such as credit card details. Google’s privacy policy governs payment processing.</p>
+<p>The app receives a purchase receipt and signature from Google Play, verifies them locally and stores the verified entitlement separately from general settings. This purchase storage is excluded from Android backup. Nothing is sent to a server operated by us. Purchases are checked with Google Play on startup and when returning to the app; you can restore them using the Google Play account used to buy Pro. A previously verified purchase remains available locally during network failures. A successful check without a valid purchase removes the entitlement, for example after a refund.</p>
+<p>Legal basis for processing purchase evidence: Art. 6(1)(b) GDPR (providing purchased features). Clearing app data or uninstalling removes the local evidence; it does not delete your purchase from Google Play.</p>
 
-<h2>6. No analytics on our side</h2>
-<p>
-We use no analytics, tracking or crash reporting services. We do not learn how often you open the app, how it is configured, or whether it triggered.
-</p>
-<p>
-Independently of this, <strong>Google Play</strong> collects its own data when an app is downloaded and used — such as install counts and, if you allowed it in your device settings, crash reports. Google is the controller for that; we see only aggregated, non-personal reports.
-</p>
+<h2>7. Children</h2>
+<p>CallBaby Babyphone is aimed at parents, not at children. The app is not intended for use by children and is not marketed to children. Local sound detection also processes sounds made by the child; during a telephone call the selected recipient may hear the child’s voice.</p>
 
-<h2>7. Retention</h2>
-<p>
-The information stored on your device (phone number, settings, consent decision) remains until you change it, clear the app data or uninstall the app. Nothing is stored on our side because nothing reaches us. Retention of advertising data follows Google's terms.
-</p>
+<h2>8. Retention</h2>
+<p>Local settings and diagnostic messages remain until you change them, clear app data or uninstall the app. Purchase evidence is also removed after a successful check without a valid purchase. Google’s retention rules apply to advertising, privacy choices and purchases; your telephone provider’s rules apply to telephone connections.</p>
 
-<h2>8. Your rights</h2>
-<p>
-You have the rights to access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and objection (Art. 21 GDPR).
-</p>
-<p>
-<strong>In practice:</strong> because we receive no data about you, we cannot provide information about you or delete anything — there is nothing on file. Everything CallBaby stores is on your device and directly available to you there. For advertising data, please contact Google.
-</p>
-<p>
-You also have the right to lodge a complaint with a data protection supervisory authority.
-</p>
+<h2>9. Your rights</h2>
+<p>Under the GDPR you have the rights of access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and objection (Art. 21). Consent once given may be withdrawn at any time with future effect.</p>
+<p>Since we store no data about you and you hold no account with us, our answer to an access request will as a rule be that we hold no data concerning you. For data processed by Google through AdMob or Google Play, you can also contact Google directly.</p>
+<p>You also have the right to lodge a complaint with a supervisory authority (Art. 77 GDPR).</p>
 
-<h2>9. Children</h2>
-<p>
-CallBaby is aimed at parents, that is, at adults. The app is not intended for use by children and does not knowingly collect data from children.
-</p>
+<h2>10. Changes to this policy</h2>
+<p>If the app changes, this policy is updated accordingly. The version available at this address is the authoritative one; the date above states its status.</p>
 
-<h2>10. Changes</h2>
-<p>
-When the app changes, this policy changes with it. The current version is always available at this address; the date at the top states when it was last revised.
-</p>
+<h2>11. Contact</h2>
+<p>Please direct privacy questions to <a href="mailto:andreas.becker.gschftl@gmail.com">andreas.becker.gschftl@gmail.com</a>.</p>
 
 </main>
 <footer>
